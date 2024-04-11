@@ -9,9 +9,9 @@ It includes a variety of input features along with two crucial columns that repr
 - The second label is `treatement` (for a binary classification problem),  and it represents whether an individual receives a particular type of treatment.
 
 ## Objectives
-- Binary Classification Model: Build another supervised model, this time to classify whether an individual is likely to receive treatment. 
+- Binary Classification Model: Build a supervised model to classify whether an individual is likely to receive treatment. 
 
-- Regression Model: Develop a supervised machine learning model to predict the total cost based on the features.
+- Regression Model: Develop another supervised machine learning model to predict the total cost based on the features.
 
 ## Classification and Regression with CatBoost
 [CatBoost](https://catboost.ai/) is a high-performance open source library for gradient boosting on decision trees. The name comes from "Category" and "Boosting". It's designed for gradient boosting on decision trees and stands out for its capabilities in handling categorical data directly, without the need for extensive preprocessing. It includes built-in regularization techniques, such as L2 regularization on the leaf values, to prevent the model from overfitting.
