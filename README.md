@@ -2,7 +2,9 @@
 Apply advanced classification and regression through CatBoost to data from the healthcare/insurance sector.
 
 ## The Data
-The dataset is from the healthcare sector. It includes a variety of input features along with two crucial columns that represent the labels. 
+The dataset is from the healthcare sector, and it was both obfuscated and anonymized before being made available to me. 
+
+It includes a variety of input features along with two crucial columns that represent the labels. 
 - The first label is `total_cost` (for a regression problem), and it represents to the predicted total cost associated with that individual.
 - The second label is `treatement` (for a binary classification problem),  and it represents whether an individual receives a particular type of treatment.
 
