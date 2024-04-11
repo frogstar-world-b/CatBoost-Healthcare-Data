@@ -24,7 +24,7 @@ XGBoost and LightGBM require one-hot encoding of categorical features, which can
 ## To Do
 - Outlier detection and feature engineering.
 - More thorough hyperparameter tuning with `MLflow` https://mlflow.org/docs/latest/python_api/mlflow.catboost.html
-- Further investigate the drivers of false-positives and false-negatives for the classification problem.
+- Further investigate the drivers of false-positives and false-negatives for the classification problem, including the classificatin threshold.
 - Try NN models (although the presence of categorical features will make this challenging).
 
 ## Before you run any code (**IMPORTANT!**)
