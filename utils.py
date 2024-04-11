@@ -22,6 +22,7 @@ y_regrssion = "total_cost"
 y_classification = "treatment"
 date_col = "date"
 
+
 def analyze_column_uniques(df):
     """Gets the dtype and number of unique values in each column.
 
@@ -89,9 +90,7 @@ def plot_x_by_labels(df, x, save_plot=False):
 
     # Don't obtain bar plot for predictors with more than 24 unique values
     if df[x].nunique() < 25:
-        grouped_data = (
-            df.groupby(x)[y_classification].value_counts().unstack()
-        )
+        grouped_data = df.groupby(x)[y_classification].value_counts().unstack()
         grouped_data.plot(kind="bar", ax=ax3, rot=50)
         ax3.set_xlabel("")
         ax3.set_ylabel("Count")
@@ -134,8 +133,7 @@ def inspect_features_correlations(df, drop_columns):
 
 
 def get_highly_correlated_features(corr, threshold=0.8):
-    """
-    Identifies pairs of features in a correlation matrix that are
+    """Identifies pairs of features in a correlation matrix that are
     either highly correlated or highly anti-correlated beyond a threshold.
     The function filters out the lower triangle of the correlation matrix
     to avoid duplicate pairs of features.
